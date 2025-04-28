@@ -1,0 +1,32 @@
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+      to top,
+      #DFA9FF 0%,
+      #DFA9FF 50%,
+      #B454FF 50%,
+      #B454FF 100%
+    );
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2em;
+    font-family: 'Karia';
+    color: #000000;
+    text-align: center;  
+  }
+  .big-box {
+    background-color: white;
+    width: 500px;
+    margin: 100px auto; /* Center it */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  

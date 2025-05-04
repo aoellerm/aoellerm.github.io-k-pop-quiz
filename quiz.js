@@ -1,12 +1,12 @@
 
-
+// updated DOM
 document.addEventListener('DOMContentLoaded', () => {
     // Start the quiz when page loads
     showAllQuestions(); //shows all questions (wow !)
 });
 
 
-const quiz = [ //questions in question
+const quiz = [ //questions in question, in this case each question choice is linked to a group
     {
       question: "Pick a vacation spot:",
       answers: [

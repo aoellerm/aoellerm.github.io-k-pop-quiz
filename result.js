@@ -4,19 +4,19 @@ const winner = localStorage.getItem('winner');
 const resultsInfo = {
   Got7: {
     description: "You're full of energy and love a good beat!",
-    image: "assets/bts.jpg"
+    image: "Got7.jpg"
   },
   IDLE: {
     description: "You're fierce, fabulous, and stylish!",
-    image: "assets/blackpink.jpg"
+    image: "Idle.jpg"
   },
   SEVENTEEN: {
     description: "You love creativity and edgy music!",
-    image: "assets/straykids.jpg"
+    image: "SEVENTEEN.jpg"
   },
   TWICE: {
     description: "You bring sunshine and smiles wherever you go!",
-    image: "assets/twice.jpg"
+    image: "TWICE.jpg"
   }
 };
 

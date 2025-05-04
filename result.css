@@ -1,0 +1,18 @@
+body{
+    min-height: 100vh;
+    background: #DFA9FF;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2em;
+    font-family: 'Karia';
+    color: #000000;
+    text-align: center;  
+  }
+  

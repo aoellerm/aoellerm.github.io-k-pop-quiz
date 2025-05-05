@@ -28,7 +28,7 @@ if (winner && resultsInfo[winner]) {
   document.getElementById('group-name').textContent = "Womp Womp";
   document.getElementById('group-description').textContent = "We couldn't find your result.";
   document.getElementById('group-image').src = 'sad.jpg'
-}
+} // little error thing just in case
 
 function restartQuiz() {
   window.location.href = 'start.html';

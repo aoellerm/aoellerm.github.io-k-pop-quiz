@@ -62,18 +62,18 @@ const quiz = [ //questions in question, in this case each question choice is lin
     questionEl.innerHTML = ''; // Clears old content
 
     quiz.forEach((q, questionIndex) => { // loops through each quiz question
-        const questionDiv = document.createElement('div'); 
-        questionDiv.className = 'question'; 
-        questionDiv.id = `question${questionIndex + 1}`;
-
-  questionDiv.innerHTML = `
+        const questionDiv = document.createElement('div'); // makes new div tag for memory
+        questionDiv.className = 'question'; // sets new div to the question styling 
+        questionDiv.id = `question${questionIndex + 1}`; 
+// gives the stuff for the question box
+  questionDiv.innerHTML = ` 
  <div class="small-box">
-  <h2>${q.question}</h2>
+  <h2>${q.question}</h2> 
  </div>
  <div id="answers-container-${questionIndex}" class="answers-container"></div>
- `;
+ `; // $q pulls question string from the quiz
 
- const answersContainer = questionDiv.querySelector('.answers-container');
+ const answersContainer = questionDiv.querySelector('.answers-container'); //answerContainer contains the answer buttons.   
 
  q.answers.forEach(answer => {
   const btn = document.createElement('button');

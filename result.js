@@ -11,7 +11,7 @@ const resultsInfo = {
     image: "Idle.jpg"
   },
   SEVENTEEN: {
-    description: "You love creativity and edgy music!",
+    description: "You love creativity and funky music!",
     image: "SEVENTEEN.jpg"
   },
   TWICE: {

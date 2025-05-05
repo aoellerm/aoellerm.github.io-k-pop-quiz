@@ -25,8 +25,9 @@ if (winner && resultsInfo[winner]) {
   document.getElementById('group-description').textContent = resultsInfo[winner].description;
   document.getElementById('group-image').src = resultsInfo[winner].image;
 } else {
-  document.getElementById('group-name').textContent = "Oops!";
+  document.getElementById('group-name').textContent = "Womp Womp";
   document.getElementById('group-description').textContent = "We couldn't find your result.";
+  document.getElementById('group-image').src = 'sad.jpg'
 }
 
 function restartQuiz() {

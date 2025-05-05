@@ -23,6 +23,24 @@ body{
     color: #000000;
     text-align: center;  
   }
+
+  .container {
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin: 100px auto; /* Center it */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  
+  .small-container {
+    border: 2px solid #B454FF;
+    padding: 5px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
   button {
     font-family: 'Kadwa';
     background-color: #B454FF;

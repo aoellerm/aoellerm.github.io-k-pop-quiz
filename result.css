@@ -1,18 +1,46 @@
 body{
-    min-height: 100vh;
-    background: #DFA9FF;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  h2 {
-    font-size: 2em;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #DFA9FF 0%,
+    #DFA9FF 50%,
+    #B454FF 50%,
+    #B454FF 100%
+  );
+  min-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+  h1 {
+    font-size: 3em;
     font-family: 'Karia';
     color: #000000;
     text-align: center;  
   }
-  
+  button {
+    font-family: 'Kadwa';
+    background-color: #B454FF;
+    border-radius: 25px; /* More rounded corners */
+    border: none;
+    color: white;
+    padding: 20px 40px; /* Larger padding */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Larger font */
+    transition-duration: .4s;
+    margin: 30px auto;
+    cursor: pointer;
+    width: 250px; 
+  }
+  button:hover {
+    background-color: #EDD8FA;
+    color: #B454FF;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.5);;
+  }

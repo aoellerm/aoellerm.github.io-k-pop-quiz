@@ -63,28 +63,30 @@ const quiz = [ //questions in question, in this case each question choice is lin
 
     quiz.forEach((q, questionIndex) => { // loops through each quiz question
         const questionDiv = document.createElement('div'); // makes new div tag for memory
-        questionDiv.className = 'question'; // sets new div to the question styling 
-        questionDiv.id = `question${questionIndex + 1}`; 
-// gives the stuff for the question box
+        questionDiv.className = 'question'; // sets new div to the question styling using css 
+        questionDiv.id = `question${questionIndex + 1}`; //gives unique id to each question container
+
+// $q pulls question string from the quiz, builds the visual structure for the quiz questions
+//answer-container gives placehold for answer selections
   questionDiv.innerHTML = ` 
  <div class="small-box">
   <h2>${q.question}</h2> 
  </div>
  <div id="answers-container-${questionIndex}" class="answers-container"></div>
- `; // $q pulls question string from the quiz
+ `; 
 
- const answersContainer = questionDiv.querySelector('.answers-container'); //answerContainer contains the answer buttons.   
-
+ const answersContainer = questionDiv.querySelector('.answers-container'); 
+ 
  q.answers.forEach(answer => {
   const btn = document.createElement('button');
  btn.className = 'answer-button';
- btn.textContent = answer.text;
+ btn.textContent = answer.text; //places the answer text into each button
 
   btn.onclick = function() {
   // Removes the selected stuff from the answer
  answersContainer.querySelectorAll('.answer-button').forEach(b => {
   b.classList.remove('selected');
- });
+ }); 
  // Add selected to selected answer. Basically makes sure only one answer in the group can be highlighted and selected at a time
  btn.classList.add('selected');
 userAnswers[questionIndex] = answer.group; // this saves the answer and updates userAnswers

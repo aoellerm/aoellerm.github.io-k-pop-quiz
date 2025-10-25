@@ -8,7 +8,7 @@
       #B454FF 50%,
       #B454FF 100%
     );
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -22,7 +22,6 @@
   }
   .big-box {
     background-color: white;
-    width: auto;
     margin: 100px auto; /* Center it */
     padding: 40px;
     border-radius: 20px;
@@ -59,4 +58,25 @@
     color: #B454FF;
     box-shadow:  0 4px 4px rgba(0, 0, 0, 0.5);;
   }
-  
+  @media screen and (min-width: 599px) {
+  }
+  .big-box {
+    padding: 20px;
+    width: 400px;
+  }
+  @media screen and (min-width: 600px) {
+    .big-box {
+      padding: 30px;
+      width: auto;
+    }
+  }
+    
+  @media screen and (min-width:  1024px) {
+    .big-box {
+      padding: 40px;
+      width: auto;
+    }
+     .small-box {
+    padding: 70px;
+    }
+  }

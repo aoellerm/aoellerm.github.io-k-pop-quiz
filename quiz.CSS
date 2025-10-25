@@ -1,6 +1,19 @@
+@keyframes gradientShift {
+0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 body{
   min-height: 100vh;
-  background: #DFA9FF;
+  background: linear-gradient(270deg, #DFA9FF, #B454FF, #EDD8FA);
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -17,20 +30,25 @@ h2 {
 }
 
 .question {
-  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   margin: 20px auto;
   background: #f9f9f9;
-  padding: 80px;
+  padding: 60px;
   border-radius: 20px;
   border: 2px solid #B454FF;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  top: 50px;
+  position: relative;
 }
 .small-box {
   border: 2px solid #B454FF;
   padding: 1px;
   margin-bottom: 25px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .answer-button {
   display: flex;
@@ -68,10 +86,34 @@ h2 {
   display: block;
   font-size: 16px;
   transition-duration: .4s;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 .submit-button:hover {
   background-color: #EDD8FA;
   color: #B454FF;
   box-shadow:  0 4px 4px rgba(0, 0, 0, 0.5);;
 }
+
+  @media screen and (min-width: 700px) {
+     .small-box {
+  width: 300px;
+    }
+    .question {
+  width: auto;
+    }
+    .answer-button {
+  width: 300px;
+  }
+  }
+    
+  @media screen and (min-width:  1024px) {
+    .small-box {
+  width: 500px;
+    }
+    .question {
+  width: 800px;
+    }
+    .answer-button {
+  width: 500px;
+  }
+ }

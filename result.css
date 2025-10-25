@@ -1,12 +1,7 @@
+
 body{
   height: 100vh;
-  background: linear-gradient(
-    to top,
-    #DFA9FF 0%,
-    #DFA9FF 50%,
-    #B454FF 50%,
-    #B454FF 100%
-  );
+ background: radial-gradient(#EDD8FA 0%, #DFA9FF 35%, #B454FF 100%);
   min-height: 100vh;
   overflow-y: auto;
   display: flex;
@@ -62,3 +57,4 @@ body{
     color: #B454FF;
     box-shadow:  0 4px 4px rgba(0, 0, 0, 0.5);;
   }
+ 

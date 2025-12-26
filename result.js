@@ -31,5 +31,5 @@ if (winner && resultsInfo[winner]) {
 } // little error thing just in case, I was running into issues for a bit so I made it for testing purposes.
 
 function restartQuiz() {
-  window.location.href = 'start.html';
+  window.location.href = 'index.html';
 }

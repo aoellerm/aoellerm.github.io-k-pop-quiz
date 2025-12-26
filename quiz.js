@@ -72,7 +72,7 @@ const quiz = [ //questions in question, in this case each question choice is lin
  <div class="small-box">
   <h2>${q.question}</h2> 
  </div>
- <div id="answers-container-${questionIndex}" class="answers-container"></div>
+ <div id="answers-container-${questionIndex + 1}" class="answers-container"></div>
  `; 
 
  const answersContainer = questionDiv.querySelector('.answers-container'); 
